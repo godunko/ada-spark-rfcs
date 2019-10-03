@@ -24,6 +24,7 @@ cases when his container implementation choose alternative representation
 of stored elements.
 
 Iterators from Ada 2012 standard use two types:
+
 - a Cursor type to keep position in the container and, perhaps, iteration state;
 - an Iterator type to perform operations like First, Next and so on.
 
@@ -61,7 +62,7 @@ some elements, implementation of which is defined latter or there are
 several alternative implementations. We don't know implementation details
 in advance, so the only way we can define Cursor is a class-wide type.
 As result on each iteration new class-wide object is created, copied and
-old one is destroyed. This is rater expensive.
+old one is destroyed. This is rather expensive.
 
 .. code:: ada
 
@@ -140,7 +141,7 @@ itself, while Next operation becomes a procedure:
          Print (Iter.Separator);
       end loop;
    end Print;
-   
+
 No need to instantiate a generic here to define new iterator, because
 iteration doesn't depend on element type or cursor. For a loop
 statement compiler creates just one object of Iterator'Class, no
