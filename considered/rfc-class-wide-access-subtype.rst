@@ -115,7 +115,7 @@ With this constraint the author could define subtypes:
 
 The Rectangle_Access still has Shape_Access type and can be used whereevere
 Shape_Access is expected. In the same time (implicit or explicit) dereferenced value
-denotes Rectangle type (if the acess value is not null).
+denotes Rectangle type (if the access value is not null).
 
 This constraint could be used in other places where constraint is allowed.
 For example,
